@@ -1,0 +1,58 @@
+// 1. Utilizando el ciclo de repetición for, escribir un programa que itere todos los números del 1 al 10 y que muestre el resultado en consola de la siguiente manera: "10--9--8--7--6--5--4--3--2--1".
+let resultado="";
+for (let i = 10; i>=1; i--){
+  if (i!==1){
+    resultado += i + "--";
+  }else{
+    resultado += i;
+  }  
+}
+console.log(resultado);
+
+
+console.log("   ");
+
+// 2. Usando el ciclo de repetición for, imprimir todos los números que son múltiplos del 5, comenzando en la posición 70, hasta llegar a 1.
+for (let j = 70; j>=1; j--){
+  if (j % 5 == 0){
+    console.log("Multiplos de 5: " + j);
+  }
+}
+
+console.log("   ");
+
+// 3. Escribir un algoritmo que le diga al usuario que ingrese cualquier carácter de A-Z. El usuario tendrá 10 intentos para ingresar un carácter, si el usuario ingresa una vocal sumarle 10 puntos, y si el usuario ingresa una consonante restarle 2. Muestre el total de puntos obtenidos por el usuario en consola.
+const vocales = ["A", "E", "I", "O", "U"]
+let puntos = 0;
+for(let k = 1; k<=10; k++){
+let caracter = prompt("Intento " + k + " Ingrese un caracter de A-Z");
+  if (caracter>="A" && caracter<="Z"){
+    if (vocales.includes(caracter)){
+      puntos += 10;
+    }
+    else{
+      puntos -= 2;
+    }
+  }else{
+    console.log("Debe ingresar un caracter de A-Z");
+    k--;
+  }
+} 
+console.log("Obtubiste " + puntos + " puntos");
+
+
+console.log("   ");
+
+
+// 4. Solicite al usuario que ingrese 10 números, estos serán guardados en un array []. Posteriormente calcule el cuadrado de cada numero ingresado.
+let numeros = [];
+for (let i = 0; i < 10; i++) {
+  let numero = Number(prompt("Ingresa el número " + (i + 1) ));
+  numeros.push(numero);
+}
+
+for (let i = 0; i < numeros.length; i++) {
+  let cuadrado = numeros[i] ** 2;4
+  4
+  console.log("El cuadrado de " + numeros[i] + " es: " + cuadrado);
+}

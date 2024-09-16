@@ -1,0 +1,30 @@
+// Desarrolle un algoritmo que imprima en pantalla todos los números que sean múltiplos de 2 o de 3 dentro de un rango ingresado por el usuario. Aparte de ello que indique cuantos números son múltiplos de 2 y de 3.
+let numero1 = Number(prompt("Ingrese el primer numero"));
+while (isNaN(numero1)){
+  numero1 = Number(prompt("por favor ingrese el primer numero"));
+}
+let numero2 = Number(prompt("Ingrese el segundo numero"));
+while (isNaN(numero2)){
+  numero2 = Number(prompt("por favor ingrese el segundo numero"));
+}
+let contador = 0;
+let contador2 = 0;
+let i = numero1;
+
+while( i<= numero2){
+  if(i%2==0 || i%3==0){
+    alert(i);
+    
+  if(i%2==0){
+    contador++;
+  }
+  if (i%3==0){
+    contador2++;
+  }
+  
+}
+  i++;
+}
+
+alert("La cantidad de numeros multiplos de 2 es: " + contador);
+alert("La cantidad de numeros multiplos de 3 es: " + contador2);

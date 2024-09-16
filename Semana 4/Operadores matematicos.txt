@@ -1,0 +1,29 @@
+//1. Escribe un programa que solicite al usuario ingresar la temperatura actual de su ciudad en grados Celsius, luego debe convertir esos grados Celsius a Fahrenheit usando la fórmula 
+let gradosCelsius = Number(prompt("Ingrese la temperatura actual en grados Celsius de su ciudad: "));
+let gradosFahrenheit = (gradosCelsius * 9/5) + 32;
+console.log ("La temperatura " + gradosCelsius + "°C en grados Fahrenheit sería: " + gradosFahrenheit + "°f");
+
+//2. Desarrolle un algoritmo que reciba el radio de un círculo y calcule su área utilizando la fórmula Tomando en cuenta que PI tiene un valor constante 3.14159265.
+let radioCirculo = Number(prompt("Ingrese el radio del circulo"));
+let pi = 3.14159265;
+let areaCirculo = pi*radioCirculo*radioCirculo;
+console.log("El area del circulo es: " + areaCirculo);
+
+//3. Escribe un programa que le pregunte al usuario cuantas baleadas quiere comprar, debe calcular el total a pagar si la baleada tiene un costo de L. 25.00.
+var baleadas = Number(prompt("Cuantas valeadas quiere comprar?, tienen un costo de 25Lps"));
+var totalBaleadas = baleadas * 25;
+console.log("El total a pagar es: " + totalBaleadas +  "Lps. muchas gracias");
+
+//4. Cree un programa que calcule el residuo de 2 números ingresados por el usuario.
+var primerNumeroResiduo = Number(prompt("Ingresa el primer numero residuo"));
+var segundoNumeroResiduo = Number(prompt("Ingresa el segundo numero residuo"));
+var resultadoResiduo = primerNumeroResiduo % segundoNumeroResiduo;
+console.log("El resultado del residuo de dividir " + primerNumeroResiduo + "÷" + segundoNumeroResiduo + " es: " + resultadoResiduo);
+
+//5. Escriba un algoritmo que solicite 3 números al usuario, sume los 2 primeros y luego lo multiplica por el 3ro, muestre el resultado en consola.
+let primerNumero = Number(prompt("Ingresa el primer número a sumar"));
+let segundoNumero = Number(prompt("Ingresa el segundo número a sumar"));
+let tercerNumero = Number(prompt("Ingresa el tercer número a multiplicar"));
+let resultadoSuma = primerNumero + segundoNumero;
+let resultadoTotal = resultadoSuma * tercerNumero;
+console.log("El resultado de " + primerNumero + "+" + segundoNumero + " es: " + resultadoSuma + " y multiplicandolo x " + tercerNumero + " sería: " + resultadoTotal);

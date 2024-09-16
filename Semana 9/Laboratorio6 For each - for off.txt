@@ -1,0 +1,24 @@
+// Desarrolle un algoritmo que tenga un arreglo con 7 números enteros los cuales serán ingresados por el usuario. Posteriormente diga cual es el número menor de todos y el mayor. Utilice for-each o for-of para la solución del problema planteado.
+let arreglos = [];
+for(let i = 1; i <= 7; i++){
+  let numero = parseInt(prompt("Ingrese el numero " + i));
+  arreglos.
+  push(numero);
+  if (isNaN (numero)){
+    throw Error("Solo se permiten numeros");
+  }
+}
+
+let numeroMayor = arreglos[0];
+let numeroMenor = arreglos[0];
+
+for (let numero1 of arreglos){
+  if (numero1>numeroMayor){
+    numeroMayor = numero1;
+  }
+  if (numero1<numeroMenor){
+    numeroMenor = numero1;
+  }
+}
+alert("El mayor numero ingresado es: " + numeroMayor);
+alert("El menor numero ingresado es: " + numeroMenor);

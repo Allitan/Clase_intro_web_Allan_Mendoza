@@ -1,0 +1,20 @@
+//1. Escribe un programa que guarde un número entero, y que muestre en consola el mensaje: “Haz introducido el numero (x), gracias”.
+let numero = Number(prompt("Ingrese un número"));
+console.log("El número que ingresó es: "+numero+" gracias");
+
+//2. Escribe un programa que guarde la edad del, y que muestre en consola el mensaje: “Ahora sé que tienes (x) años, gracias”. 
+let edad = Number(prompt("Ingrese su edad:"));
+console.log("Ahora sé que tienes " +edad+" años, gracias");
+
+//3. Escribe un programa que guarde la hora, y que muestre en consola el mensaje: “Hora introducida ok. Son las 18:30:00 (por ejemplo)”. 
+var hora = prompt("Ingrese la hora actual");
+console.log("Hora introducida ok. son las "+hora);
+
+//4. Escribe un programa que guarde las iniciales de su nombre y que muestre en consola el mensaje: “Sus iniciales son: A.J.R. (por ejemplo)”.
+var nombre = prompt("Ingrese las iniciales de su nombre:");
+console.log("Sus iniciales son: "+nombre);
+
+//5. Escribe un programa que guarde su altura aproximada, sus iniciales y que muestre en consola el mensaje: “Sus iniciales son: A.J.R. y su altura 1.34 (por ejemplo)”. 
+let altura = Number(prompt("Escriba su altura aproximada:"));
+let iniciales = prompt("Escriba sus iniciales");
+console.log("Sus iniciales son: "+iniciales+ " y su altura es: "+ altura);

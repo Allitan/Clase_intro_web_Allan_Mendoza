@@ -1,0 +1,11 @@
+// Desarrolle un algoritmo que obtenga la suma y la cantidad de múltiplos de 3 que hay en los números pares que existen entre 1 y 300. Debe mostrar en pantalla los resultados solicitados.
+let cantidad = 0;
+let suma = 0;
+for (let i = 1; i <= 300; i++){
+  if (i % 2 == 0 && i % 3 == 0){
+    suma += i;
+    cantidad++;
+  }
+}
+alert("La cantidad de numeros multiplos de 3 es: " + cantidad);
+alert("La suma de los numeros multiplos de 3 es: "+ suma);

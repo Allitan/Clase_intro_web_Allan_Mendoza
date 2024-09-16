@@ -1,0 +1,56 @@
+//1. Escribir un programa que solicite ingresar N cantidad notas de alumnos y nos informe el promedio de todas las notas.
+let cantidadNotas = Number(prompt("Ingrese la cantidad de notas"));
+while (isNaN(cantidadNotas)){
+  cantidadNotas = Number(prompt("Por favor ingrese la cantidad de notas"));
+}
+contador = 1;
+sumaDeNotas = 0;
+while (contador <= cantidadNotas){
+  let nota = Number(prompt("Ingrese la nota " + contador))
+    sumaDeNotas+=nota;
+  contador++;
+}
+let promedio = sumaDeNotas/cantidadNotas;
+alert("El promedio de las notas es: " +  promedio);
+
+//2. Desarrollar un algoritmo que imprima en pantalla un contador que va aumentando de uno en uno, hasta el número 50.
+let contador1 = 1;
+while (contador1 <= 50){
+  console.log("Aumentando " + contador1++);
+}
+ console.log("   ");
+//3. Elaborar un algoritmo que imprima los números del 100 al 1, en orden decreciente, solamente los impares.
+let contador2 = 100;
+while (contador2 >= 1){
+  if (contador2 % 2 != 0){
+    console.log("Impares " + contador2);
+  }
+  contador2--;
+}
+console.log("   ");
+
+// 4. Escribir un programa que muestre en pantalla un contador que vaya aumentando de dos en dos, siendo el límite el que usuario de manera dinámica haya ingresado en el algoritmo.
+let limite = Number(prompt("Ingrese el limite de numeros a mostrar"));
+let contador3 = 2;
+while (contador3 <= limite){
+  if (contador3 % 2 == 0){
+  console.log("Aumentando x 2: " + contador3);
+}
+  contador3++;
+}
+console.log("   ");
+//5. Realizar un algoritmo que se ejecute hasta que el usuario ingrese de manera correcta el carácter “A”.
+let caracter = prompt("Ingrese un caracter");
+while (caracter != "A"){
+  caracter = prompt("sino ingresa el caracter A se seguira repitiendo este mensaje");
+}
+alert("A ingresado el caracter correcto");
+
+//6. Crear un algoritmo que muestre todos los múltiplos de 8 que hay hasta el valor 500. Debe aparecer en pantalla 8 - 16 - 24, etc.
+let contador4 = 1;
+while(contador4<=500){
+  if (contador4 % 8 == 0){
+    console.log("Multiplos de 8: " + contador4);
+  }
+  contador4++;
+}
